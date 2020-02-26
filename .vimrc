@@ -28,6 +28,7 @@ filetype plugin indent on
 "	filetype plugin on
 	set encoding=utf-8
 	set number relativenumber
+	set wrap linebreak
 	syntax on
 "*******************************************************
 
@@ -58,9 +59,13 @@ filetype plugin indent on
 	map <S-s> :w<CR>
 "*******************************************************
 "
-" Map Ctrl-b to delete the previous word in insert mode.
+" Quit without saving the file
+	map <S-q> :q!<CR>
+"*******************************************************
+"
+" Map Ctrl-b to delete the previous/current word in insert mode.
 " Map Ctrl-w to delete the next word in insert mode.
-	imap <C-b> <C-o>db
+	imap <C-b> <Esc>dbxa
 	imap <C-w> <C-o>dw
 "*******************************************************
 "
