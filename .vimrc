@@ -56,11 +56,23 @@ filetype plugin indent on
 "*******************************************************
 "
 " Shortcutting save in insert mode
+	imap <F7> <C-o>:w<CR>
+"*******************************************************
+"
+" Shortcutting save in normal mode
 	map <S-s> :w<CR>
+"*******************************************************
+"
+" Quit with saving the file
+	map <S-w> :wq<CR>
 "*******************************************************
 "
 " Quit without saving the file
 	map <S-q> :q!<CR>
+"*******************************************************
+"
+" Map Undo in insert mode
+	imap  <C-o>u
 "*******************************************************
 "
 " Map Ctrl-b to delete the previous/current word in insert mode.
