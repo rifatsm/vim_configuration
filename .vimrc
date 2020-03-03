@@ -15,8 +15,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Dracula - dark theme for vim
 "Plugin 'dracula/vim', { 'name': 'dracula' }
-" Snazzy - dark theme  
+" Snazzy - dark theme  
 Plugin 'connorholyday/vim-snazzy'
+" Pandoc - converting .md to .pdf
+Plugin 'vim-pandoc/vim-pandoc'
+Plugin 'vim-pandoc/vim-pandoc-syntax'
+" PDF View from Markdown files
+" :StartMdPreview - to start preview
+" :StopMdPreview - to stop preview
+let g:md_pdf_viewer="open -a Preview"
+Plugin 'conornewton/vim-pandoc-markdown-preview'
 call vundle#end()
 filetype plugin indent on
 
