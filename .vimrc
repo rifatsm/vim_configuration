@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Dracula - dark theme for vim
 "Plugin 'dracula/vim', { 'name': 'dracula' }
 " Snazzy - dark theme  
-Plugin 'connorholyday/vim-snazzy'
+"Plugin 'connorholyday/vim-snazzy'
 " Pandoc - converting .md to .pdf
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
@@ -83,6 +83,10 @@ filetype plugin indent on
 	imap  <C-o>u
 "*******************************************************
 "
+" Map folding to Shift-Tab (normal mode)
+	nnoremap <S-tab> za
+"*******************************************************
+"
 " Map Ctrl-b to delete the previous/current word in insert mode.
 " Map Ctrl-w to delete the next word in insert mode.
 	imap <C-b> <Esc>dbxa
@@ -95,10 +99,14 @@ filetype plugin indent on
 "*******************************************************
 
 " Enable Snazzy dark theme
-	colorscheme snazzy
-	let g:SnazzyTransparent = 1
+"	colorscheme snazzy
+"	let g:SnazzyTransparent = 1
 "*******************************************************
 
+" Set defualt colorscheme
+	colorscheme murphy
+"*******************************************************
+"
 " Shell check:
 "	map <leader>s :!clear && shellcheck %<CR>
 "*******************************************************   
