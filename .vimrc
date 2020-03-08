@@ -21,6 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-airline/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
 Plugin 'preservim/nerdtree'
 " PDF View from Markdown files
 " :StartMdPreview - to start preview
