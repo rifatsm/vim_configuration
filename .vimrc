@@ -20,6 +20,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Pandoc - converting .md to .pdf
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax'
+Plugin 'vim-airline/vim-airline'
+Plugin 'preservim/nerdtree'
 " PDF View from Markdown files
 " :StartMdPreview - to start preview
 " :StopMdPreview - to stop preview
@@ -37,6 +39,7 @@ filetype plugin indent on
 	set encoding=utf-8
 	set number relativenumber
 	set wrap linebreak
+	set incsearch
 	syntax on
 "*******************************************************
 
@@ -85,6 +88,14 @@ filetype plugin indent on
 "
 " Map folding to Shift-Tab (normal mode)
 	nnoremap <S-tab> za
+"*******************************************************
+"
+" Map NERDTree to Ctrl-n (normal mode)
+	map <C-n> :NERDTreeToggle<CR>
+"*******************************************************
+"
+" Map StartMdPreview to Ctrl-m (normal mode) 
+	map <C-m> :StartMdPreview<CR>
 "*******************************************************
 "
 " Map Ctrl-b to delete the previous/current word in insert mode.
