@@ -18,8 +18,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Snazzy - dark theme  
 "Plugin 'connorholyday/vim-snazzy'
 " Pandoc - converting .md to .pdf
-Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
+"Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 Plugin 'preservim/nerdtree'
@@ -35,13 +35,15 @@ filetype plugin indent on
 "*******************************************************
 
 " Some Basic Features
+	set lazyredraw
 	set nocompatible
 "	filetype plugin on
 	set encoding=utf-8
-	set number relativenumber
-	set wrap linebreak
+	set number 
+	set relativenumber
+"	set wrap linebreak
 	set incsearch
-	syntax on
+"	syntax on
 "*******************************************************
 
 " Enable Autocomplete
