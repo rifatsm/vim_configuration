@@ -29,8 +29,17 @@ Plugin 'preservim/nerdtree'
 let g:md_pdf_viewer="open -a Preview"
 Plugin 'conornewton/vim-pandoc-markdown-preview'
 call vundle#end()
-filetype plugin indent on
 
+" Package install using Plug
+"*******************************************************
+call plug#begin('~/.vim/plugged')
+" For Previewing Markdown files 
+Plug 'plasticboy/vim-markdown'
+Plug 'junegunn/limelight.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+call plug#end()
+
+filetype plugin indent on
 
 "*******************************************************
 
